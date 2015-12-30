@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+h1#mainHead, h2, #mainInfo p {
+	text-align: center;
+}
+
+h1#mainHead, h2, legend {
+	font-weight: bold;
+}
+
+h1#mainHead {
+	background: #2D3945;
+	color: white;
+	padding: 30px 0;
+}
+
+h1, h2 {
+	font-size: 22px;
+} 
+
+h2 {
+	margin-bottom: 10px;
+}
+
+p {
+	color: #555;
+	font-size: 18px;
+}
+
+label + p {
+	margin-top: 20px;
+}
+
+fieldset p {
+	margin-bottom: 20px;
+}
+
+#mainInfo {
+	border-bottom: 5px solid #2D3945;
+	padding: 50px 0;
+}
+
+#contactInfo {
+	border-top: 2px solid #2D3945;
+	margin-top: 3px;
+}
+
+fieldset:first-child {
+	border-bottom: 2px solid #2D3945;
+	padding-bottom: 20px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background: #EFF0F1;
+	margin: 10px 0 20px;
+	border: 2px solid #EFF0F1;
+}
+
+input:focus, select:focus {
+	outline: none;
+	border: 2px solid #2D3945;
+}
+
+#zip {
+	width: 50%;
+	max-width: 200px;
+}
+
+legend {
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+::-webkit-input-placeholder {
+   color: #777;
+   text-align: right;
+}
+
+::-moz-placeholder {
+   color: #777;
+   text-align: right;
+}
+
+::moz-placeholder {
+   color: #777;
+   text-align: right;
+}
+
+::-ms-input-placeholder {
+   color: #777;
+   text-align: right;
+}
+
+[type=checkbox], [type=radio] {
+	display: none;
+}
+
+fieldset span {
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #444;
+}
+
+[type=checkbox] + span:before, 
+[type=checkbox]:checked + span:before, 
+[type=radio] + span:before, 
+[type=radio]:checked + span:before  {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border: 2px solid #ccc;
+	background: #ccc;
+}
+
+[type=checkbox] + span:before {
+	border-radius: 2px;
+}
+
+[type=checkbox]:checked + span:before {
+	background: url(../images/check.png);
+	background-size: cover;
+	border: 2px solid #222;
+	border-radius: 2px;
+}
+
+[type=radio] + span:before {
+	border-radius: 100%;
+}
+
+[type=radio]:checked + span:before {
+	background: url(../images/radio.png);
+	background-size: cover;
+	border: 2px solid #222;
+}
+
+textarea {
+	width: 100%;
+	resize: none;
+	border-radius: 5px;
+	height: 100px;
+	background: #EFF0F1;
+	border: none;
+}
+
+textarea:focus {
+	outline: none;
+	padding: 10px;
+}
+
+[type=submit] {
+	width: 100%;
+	margin-top: 20px;
+	background: #4EBBB5;
+	border: none;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	font-family: serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+[type=submit]:hover {
+	cursor: pointer;
+}
+
+#copyRight {
+	text-align: center;
+	color: #ccc;
+	padding: 30px 0;
+	font-size: 14px;
+}
+
+@media (min-width: 760px) {
+	input[type="text"], 
+	input[type="email"], 
+	input[type="tel"],
+	select  {
+		display: inline-block;
+		width: 75%;
+	}
+
+	label {
+		display: inline-block;
+		width: 24%;
+	}
+}
