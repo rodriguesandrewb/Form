@@ -147,7 +147,7 @@ fieldset span {
 
 [type=checkbox]:checked + span:before {
 	background: #e74c3c;
-	background-size: cover;x;
+	background-size: cover;
 	border: 2px solid #e74c3c;
 	border-radius: 2px;
 }
