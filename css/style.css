@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+body, input {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .container {
 	max-width: 800px;
 	margin: 0 auto;
@@ -17,13 +21,14 @@ h1#mainHead, h2, legend {
 }
 
 h1#mainHead {
-	background: #2D3945;
+	background: #e74c3c;
 	color: white;
 	padding: 30px 0;
 }
 
 h1, h2 {
 	font-size: 22px;
+	color: #e74c3c;
 } 
 
 h2 {
@@ -33,6 +38,7 @@ h2 {
 p {
 	color: #555;
 	font-size: 18px;
+	color: white;
 }
 
 label + p {
@@ -44,17 +50,17 @@ fieldset p {
 }
 
 #mainInfo {
-	border-bottom: 5px solid #2D3945;
+	border-bottom: 5px solid #e74c3c;
 	padding: 50px 0;
 }
 
 #contactInfo {
-	border-top: 2px solid #2D3945;
+	border-top: 2px solid #e74c3c;
 	margin-top: 3px;
 }
 
 fieldset:first-child {
-	border-bottom: 2px solid #2D3945;
+	border-bottom: 2px solid #e74c3c;
 	padding-bottom: 20px;
 }
 
@@ -85,6 +91,7 @@ input:focus, select:focus {
 legend {
 	font-size: 20px;
 	padding: 20px 0;
+	color: #e74c3c;
 }
 
 ::-webkit-input-placeholder {
@@ -111,10 +118,14 @@ legend {
 	display: none;
 }
 
+label {
+	color: white;
+}
+
 fieldset span {
 	display: inline-block;
 	margin-bottom: 15px;
-	color: #444;
+	color: #999;
 }
 
 [type=checkbox] + span:before, 
@@ -135,9 +146,9 @@ fieldset span {
 }
 
 [type=checkbox]:checked + span:before {
-	background: url(../images/check.png);
-	background-size: cover;
-	border: 2px solid #222;
+	background: #e74c3c;
+	background-size: cover;x;
+	border: 2px solid #e74c3c;
 	border-radius: 2px;
 }
 
@@ -148,7 +159,11 @@ fieldset span {
 [type=radio]:checked + span:before {
 	background: url(../images/radio.png);
 	background-size: cover;
-	border: 2px solid #222;
+	border: 2px solid #e74c3c;
+}
+
+label:checked {
+	color: #e74c3c;
 }
 
 textarea {
@@ -168,7 +183,7 @@ textarea:focus {
 [type=submit] {
 	width: 100%;
 	margin-top: 20px;
-	background: #4EBBB5;
+	background: #e74c3c;
 	border: none;
 	padding: 20px;
 	border-radius: 5px;
@@ -187,6 +202,30 @@ textarea:focus {
 	color: #ccc;
 	padding: 30px 0;
 	font-size: 14px;
+}
+
+body {
+	background: #222;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+select {
+	background: #444;
+	border: none;
+	border-radius: 0;
+	color: white;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus,
+select:focus {
+	background: #e74c3c;
+	border: none;
+	border-radius: 0;
+	color: white;
 }
 
 @media (min-width: 760px) {

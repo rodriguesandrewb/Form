@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -27,9 +28,9 @@
 				<label for="address">Street Address</label>
 				<input type="text" id="address" name="userAddress">
 				<label for="city">City</label>
-				<input type="text" id="state" name="userState">
+				<input type="text" id="city" name="userState">
 				<label for="state">State</label>
-				<select>
+				<select id="state">
 					<option>Arizona</option>
 					<option>California</option>
 					<option>Texas</option>
@@ -62,7 +63,7 @@
 					<input type="radio" id="plainText" name="newsLetterFormat">
 					<span>Plain Text</span>
 				</label>
-				<p for="otherTopics">Other topics you'd like to hear about</p>
+				<p>Other topics you'd like to hear about</p>
 				<textarea id='otherTopics' name="otherTopics"></textarea>
 			</fieldset>
 			<input type="submit" value="Sign Up">
